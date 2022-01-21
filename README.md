@@ -1,16 +1,15 @@
 # cross_platform_flutter
 
-A new Flutter project.
+This is a very simple app for me to teach basic very flutter concepts: 
+
+- Material Design.
+- Widgets "Stateless and Stateful widget". 
+- Navigation. 
+- Working with images.
+- The app uses setState to manage state.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+You should first download Flutter to your computer, just follow this link: https://docs.flutter.dev/get-started/install
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Clone this project into your machine and run it =)
