@@ -1,9 +1,8 @@
-import 'package:cross_platform_flutter/src/components/list_words_render.dart';
-import 'package:cross_platform_flutter/src/modules/comparison/comparison.dart';
-import 'package:cross_platform_flutter/src/modules/intro/intro_page.dart';
+import 'package:flutter/material.dart';
 import 'package:cross_platform_flutter/theme/colors.dart';
 import 'package:cross_platform_flutter/theme/export.dart';
-import 'package:flutter/material.dart';
+import 'package:cross_platform_flutter/src/components/list_words_render.dart';
+import 'package:cross_platform_flutter/src/modules/comparison/comparison.dart';
 import 'package:cross_platform_flutter/src/components/cross_plataform_page.dart';
 
 class WhatIsFlutterIntro extends StatefulWidget {
@@ -52,32 +51,43 @@ class WhatIsFlutterIntroState extends State<WhatIsFlutterIntro> {
       body: SingleChildScrollView(
         child: Padding(
           padding: const EdgeInsets.only(top: 50, right: 10, left: 10),
-          child: GestureDetector(
-            onTap: countHeartBeat,
-            child: Column(
-              children: [
-                Text(
-                  'Dart makes my heart 💙 Flutter $thisMuch times',
-                  textAlign: TextAlign.center,
-                  style: const TextStyle(
-                    color: CrossPlataformColors.textColorPrimary,
-                    fontSize: CrossPlataformFontSize.bodyText,
-                  ),
+          child: Column(
+            children: [
+              Text(
+                'Dart makes my heart 💙 Flutter $thisMuch times',
+                textAlign: TextAlign.center,
+                style: const TextStyle(
+                  color: CrossPlataformColors.textColorPrimary,
+                  fontSize: CrossPlataformFontSize.bodyText,
                 ),
-                if (thisMuch > 1) ...{
-                  ListWordRendering(
-                    itemCount: 1,
-                    dynamicList: whatIsFlutter,
-                  )
-                },
-                const SizedBox(
-                  height: 25,
-                ),
-                const Image(
+              ),
+              if (thisMuch > 1) ...{
+                ListWordRendering(
+                  itemCount: 1,
+                  dynamicList: whatIsFlutter,
+                )
+              },
+              const SizedBox(
+                height: 25,
+              ),
+              GestureDetector(
+                onTap: countHeartBeat,
+                child: const Image(
                   image: AssetImage('assets/images/meme_widget.png'),
                 ),
-              ],
-            ),
+              ),
+              const SizedBox(
+                height: 25,
+              ),
+              const Text(
+                AllTexts.clickOnTheImage,
+                textAlign: TextAlign.center,
+                style: TextStyle(
+                  color: CrossPlataformColors.textColorPrimary,
+                  fontSize: CrossPlataformFontSize.bodyText,
+                ),
+              ),
+            ],
           ),
         ),
       ),

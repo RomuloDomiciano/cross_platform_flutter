@@ -1,4 +1,5 @@
 class AllTexts {
+  static const String clickOnTheImage = 'Click na imagem ☝️';
   static const String linkedin = 'Linkedin';
   static const String gitHub = 'Github';
   static const String goBack = 'Voltar';

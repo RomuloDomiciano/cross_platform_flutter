@@ -1,3 +1,3 @@
 export 'design.dart';
-export 'texts.dart';
+export '../utils/texts.dart';
 export 'sizing.dart';
