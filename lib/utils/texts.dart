@@ -5,7 +5,7 @@ class AllTexts {
   static const String goBack = 'Voltar';
   static const String goForward = 'Avançar';
   static const String appBarTitle = 'Cross Platorm with Flutter';
-  static const String homeTitle = 'Desenvolvimento de Cross Plataform com Flutter';
+  static const String homeTitle = 'Desenvolvimento de Cross Platform com Flutter';
   static const String introSubTile = 'Prof. Esp. Rômulo Domiciano';
   static const String mySelfTitle = 'print("hello, world")';
   static const String makesMyHeart = 'Dart makes my heart Flutter 💙';
