@@ -1,4 +1,4 @@
-# cross_platform_flutter
+# Very simple app example (Cross Platform)
 
 This is a very simple app for me to teach basic very flutter concepts: 
 
