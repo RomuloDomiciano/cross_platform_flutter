@@ -1,9 +1,9 @@
+import 'package:flutter/material.dart';
 import 'package:animated_text_kit/animated_text_kit.dart';
-import 'package:cross_platform_flutter/src/components/cross_plataform_page.dart';
-import 'package:cross_platform_flutter/src/modules/myself.dart/myself.dart';
 import 'package:cross_platform_flutter/theme/colors.dart';
 import 'package:cross_platform_flutter/theme/export.dart';
-import 'package:flutter/material.dart';
+import 'package:cross_platform_flutter/src/modules/myself/myself.dart';
+import 'package:cross_platform_flutter/src/components/cross_plataform_page.dart';
 
 class IntroPage extends StatelessWidget {
   const IntroPage({Key? key}) : super(key: key);
@@ -11,6 +11,7 @@ class IntroPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return CrossPlataformPage(
+      pageTitle: '',
       goForward: () {
         Navigator.push(
           context,
@@ -20,7 +21,7 @@ class IntroPage extends StatelessWidget {
         );
       },
       body: Padding(
-        padding: const EdgeInsets.only(top: 50.0),
+        padding: const EdgeInsets.only(top: CrossPlataformFontSize.introPadding),
         child: SingleChildScrollView(
           child: Column(
             children: [
@@ -33,7 +34,7 @@ class IntroPage extends StatelessWidget {
                 ),
               ),
               const SizedBox(
-                height: 25,
+                height: CrossPlataformFontSize.sizedBoxHeight,
               ),
               TextLiquidFill(
                 text: AllTexts.introSubTile,
@@ -45,7 +46,7 @@ class IntroPage extends StatelessWidget {
                 ),
               ),
               const SizedBox(
-                height: 25,
+                height: CrossPlataformFontSize.sizedBoxHeight,
               ),
               AnimatedTextKit(
                 isRepeatingAnimation: true,
@@ -71,13 +72,13 @@ class IntroPage extends StatelessWidget {
                 ],
               ),
               const SizedBox(
-                height: 25,
+                height: CrossPlataformFontSize.sizedBoxHeight,
               ),
               const Image(
                 image: AssetImage('assets/images/qr_linkedin.png'),
               ),
               const SizedBox(
-                height: 25,
+                height: CrossPlataformFontSize.sizedBoxHeight,
               ),
               AnimatedTextKit(
                 isRepeatingAnimation: true,
@@ -101,7 +102,7 @@ class IntroPage extends StatelessWidget {
                 ],
               ),
               const SizedBox(
-                height: 15,
+                height: CrossPlataformFontSize.sizedBoxHeight,
               ),
               const Image(
                 image: AssetImage('assets/images/qr_git_hub.png'),

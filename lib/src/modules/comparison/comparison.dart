@@ -1,5 +1,6 @@
 import 'package:cross_platform_flutter/src/modules/companies/companies_page.dart';
 import 'package:cross_platform_flutter/src/modules/what_is_flutter/what_is_flutter.dart';
+import 'package:cross_platform_flutter/theme/export.dart';
 import 'package:flutter/material.dart';
 import 'package:cross_platform_flutter/src/models/images_list.dart';
 import 'package:cross_platform_flutter/src/components/list_image_render.dart';
@@ -17,6 +18,7 @@ class ComparisonPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return CrossPlataformPage(
+      pageTitle: AllTexts.performanceTitle,
       goBack: () {
         Navigator.pop(context);
       },
@@ -29,7 +31,7 @@ class ComparisonPage extends StatelessWidget {
         );
       },
       body: Padding(
-        padding: const EdgeInsets.only(top: 50),
+        padding: const EdgeInsets.only(top: 15),
         child: ListImageRendering(
           dynamicList: comparisonList,
           itemCount: comparisonList.length,

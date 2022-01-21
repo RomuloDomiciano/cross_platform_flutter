@@ -7,7 +7,7 @@ class AllTexts {
   static const String appBarTitle = 'Cross Platorm with Flutter';
   static const String homeTitle = 'Desenvolvimento de Cross Plataform com Flutter';
   static const String introSubTile = 'Prof. Esp. Rômulo Domiciano';
-  static const String introTitle = 'print("hello, world")';
+  static const String mySelfTitle = 'print("hello, world")';
   static const String makesMyHeart = 'Dart makes my heart Flutter 💙';
   static const String whatIsFlutterTitle = 'Ok, mas o que é Flutter?';
   static const String madeByGoogle = 'Feito e mantido pela Google!';
@@ -18,11 +18,9 @@ class AllTexts {
   static const String whatSoCoolAboutFlutterTitle = 'O que tem de legal no Flutter';
   static const String hybrid = 'Híbrido';
   static const String speed = 'Velocidade';
-  static const String pixelControl = 'Pixel na sua mão ( ͡° ͜ʖ ͡°)';
+  static const String pixelControl = 'Controle total da tela ( ͡° ͜ʖ ͡°)';
   static const String nativeArm = 'Arm Nativo!';
   static const String performanceTitle = 'E vamos comparar performance';
-  static const String performanceAndroid = 'Performance Android';
-  static const String performanceIos = 'Performance IOS';
   static const String companiesFlutterTitle = 'Algumas empresas que usam Flutter!';
   static const String googleFuchsia = 'E sem falar da própria Google! ';
   static const String youCanFindMe = 'Você pode me encontrar no...';

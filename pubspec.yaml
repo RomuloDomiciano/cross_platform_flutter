@@ -78,6 +78,8 @@ flutter:
     - assets/images/nubank.png
     - assets/images/tencent.jpg
     - assets/images/groupon.png
+    - assets/images/monis.jpeg
+    - assets/images/fuchsia.png
       
 
   # An image asset can refer to one or more resolution-specific "variants", see

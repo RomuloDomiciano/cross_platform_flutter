@@ -37,6 +37,7 @@ class WhatIsFlutterIntroState extends State<WhatIsFlutterIntro> {
   @override
   Widget build(BuildContext context) {
     return CrossPlataformPage(
+      pageTitle: AllTexts.whatIsFlutterTitle,
       goBack: () {
         Navigator.pop(context);
       },

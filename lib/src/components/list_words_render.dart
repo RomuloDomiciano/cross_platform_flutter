@@ -19,7 +19,6 @@ class ListWordRendering extends StatelessWidget {
       itemCount: itemCount,
       itemBuilder: (BuildContext context, int index) {
         dynamic listItemName = dynamicList[index];
-
         return Text(
           listItemName,
           textAlign: TextAlign.center,
